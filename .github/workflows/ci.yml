@@ -1,0 +1,13 @@
+name:"ci workflow"
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ububtu-latest
+    
+    steps:
+      - name:"starting ci workflow"
+        run: echo "starting ci workflow"
+      
