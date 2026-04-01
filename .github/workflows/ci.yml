@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name:"starting ci workflow"
-        run:echo "starting ci workflow"
+      - name: "starting ci workflow"
+        run: echo "starting ci workflow"
       
