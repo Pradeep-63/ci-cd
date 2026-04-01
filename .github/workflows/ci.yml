@@ -4,10 +4,15 @@ on:
     branches:
       - master
 jobs:
-  build:
+  determine-env:
     runs-on: ubuntu-latest
     
     steps:
       - name: "starting ci workflow"
         run: echo "starting ci workflow"
-      
+jobs:
+  check changes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checking for changes"
+        run: echo "checking for changes"
