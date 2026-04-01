@@ -10,9 +10,9 @@ jobs:
     steps:
       - name: "starting ci workflow"
         run: echo "starting ci workflow"
-jobs:
-  check changes:
+  check-changes:
     runs-on: ubuntu-latest
+    needs: determine-env
     steps:
       - name: "checking for changes"
         run: echo "checking for changes"
