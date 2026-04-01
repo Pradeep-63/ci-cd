@@ -12,6 +12,7 @@ jobs:
         run: echo "starting ci workflow"
   check-changes:
     runs-on: ubuntu-latest
+    needs: determine-env
     steps:
       - name: "checking for changes"
         run: echo "checking for changes"
